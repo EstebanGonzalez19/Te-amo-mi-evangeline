@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #fff0f5, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+  color: #cc3366;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  color: #ff66b2;
+  font-size: 2.5em;
+}
+
+.subtitle {
+  text-align: center;
+  color: #ffcc99;
+  font-size: 1.3em;
+  margin-bottom: 40px;
+}
+
+.pair {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.left, .right {
+  flex: 1;
+  min-width: 280px;
+  padding: 10px;
+}
+
+.text {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.photo {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.photo.small {
+  max-width: 180px;
+}
+
+.lyrics-section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 50px;
+  text-align: center;
+  color: #d63384;
+}
+
+.lyrics-section h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+  .pair {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    padding: 5px;
+  }
+
+  .text {
+    font-size: 1em;
+  }
+
+  .photo {
+    max-width: 100%;
+  }
+}
